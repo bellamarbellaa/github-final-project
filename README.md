@@ -5,8 +5,7 @@ user-provided principal, annual interest rate, and time period.
 
 ## Description
 
-This project was developed as part of the IBM Introduction to Git
-and GitHub course taken in Coursera
+This project was developed as the final project for the IBM Introduction to Git and GitHub course taken in Coursera
 
 The Simple Interest Calculator demonstrates basic Bash scripting
 and open-source collaboration using Git and GitHub.
@@ -47,6 +46,10 @@ Simple Interest: 100
 ## Contributing
 
 Contributions are welcome! Please read CONTRIBUTING.md.
+
+## Code of Conduct
+
+Please read CODE_OF_CONDUCT.md.
 
 ## License
 
