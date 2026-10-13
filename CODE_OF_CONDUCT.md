@@ -65,7 +65,7 @@ to the project maintainer.
 
 To report an incident, please contact:
 
-[INSERT YOUR CONTACT EMAIL]
+bellamarbellaa.001@gmail.com
 
 All reports will be reviewed fairly and confidentially.
 The privacy and safety of individuals reporting incidents
