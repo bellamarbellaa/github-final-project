@@ -1,36 +1,32 @@
 #!/bin/bash
 
-# Simple Interest Calculator
-# Formula: SI = (P * R * T) / 100
+# This script calculates simple interest given principal,
+# annual rate of interest and time period in years.
 
-echo "================================"
-echo "    SIMPLE INTEREST CALCULATOR"
-echo "================================"
+# Do not use this in production. Sample purpose only.
 
-read -p "Enter principal amount: " principal
-read -p "Enter annual interest rate (%): " rate
-read -p "Enter time period (years): " time
+# Author: Upkar Lidder (IBM)
+# Additional Authors:
+# bellamarbellaa
 
-# Validate user inputs
-if ! [[ "$principal" =~ ^[0-9]+([.][0-9]+)?$ &&
-        "$rate" =~ ^[0-9]+([.][0-9]+)?$ &&
-        "$time" =~ ^[0-9]+([.][0-9]+)?$ ]]; then
-    echo "Error: Please enter valid non-negative numbers."
-    exit 1
-fi
+# Input:
+# p, principal amount
+# t, time period in years
+# r, annual rate of interest
 
-# Calculate simple interest
-interest=$(awk -v p="$principal" -v r="$rate" -v t="$time" \
-    'BEGIN { printf "%.2f", (p * r * t) / 100 }')
+# Output:
+# simple interest = p*t*r/100
 
-total=$(awk -v p="$principal" -v i="$interest" \
-    'BEGIN { printf "%.2f", p + i }')
+echo "Enter the principal:"
+read p
 
-echo "================================"
-echo "RESULTS"
-echo "================================"
-echo "Principal Amount : $principal"
-echo "Interest Rate    : $rate%"
-echo "Time Period      : $time years"
-echo "Simple Interest  : $interest"
-echo "Total Amount     : $total"
+echo "Enter time period in years:"
+read t
+
+echo "Enter rate of interest per year:"
+read r
+
+s=$(echo "scale=2; $p * $t * $r / 100" | bc)
+
+echo "The simple interest is: "
+echo $s
