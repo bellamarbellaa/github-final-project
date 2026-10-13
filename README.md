@@ -24,7 +24,7 @@ Where:
 
 1. Clone the repository:
 
-   git clone https://github.com/YOUR-USERNAME/github-final-project.git
+   git clone https://github.com/bellamarbellaa/github-final-project.git
 
 2. Navigate to the project directory:
 
@@ -48,11 +48,10 @@ Simple Interest: 100
 
 Contributions are welcome! Please read CONTRIBUTING.md.
 
-## Code of Conduct
-
-Please read CODE_OF_CONDUCT.md.
-
 ## License
 
 This project is licensed under the Apache License 2.0.
+
+Original repository can be found in: https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
+
 See LICENSE for details.
