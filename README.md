@@ -23,7 +23,7 @@ Where:
 
 1. Clone the repository:
 
-   git clone https://github.com/bellamarbellaa/interest-calculator-for-ibm-github-course
+   git clone [https://github.com/bellamarbellaa/github-final-project]
 
 2. Navigate to the project directory:
 
